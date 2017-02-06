@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <midian.baselib.widget.BannerView
+                    android:id="@+id/banners"
+                    android:layout_width="match_parent"
+                    android:layout_height="336dp" />
+
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="34.6dp"
+                    android:layout_height="34.6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="11.5dp"
+                    android:layout_marginTop="14.4dp"
+                    android:background="@drawable/icon_share"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="9.6dp"
+                android:paddingLeft="11.5dp"
+                android:paddingRight="11.5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出租"
+                        android:textColor="@color/text_bg90"
+                        android:textSize="11.5sp"/>
+
+                    <TextView
+                        android:id="@+id/price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="300元/m`月"
+                        android:textColor="@color/red"
+                        android:textSize="15.7sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 起"
+                        android:textColor="@color/text_bg90"
+                        android:textSize="11.5sp"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF51BBFA"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="园区"
+                        android:textColor="@color/white"
+                        android:textSize="14.4sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/mianji_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="待租售面积： 8000m`"
+                    android:textColor="#FF338ABD"
+                    android:layout_marginTop="6.9dp"
+                    android:textSize="14.4sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址："
+                        android:textColor="@color/text_bg90"
+                        android:textSize="11.5sp"/>
+
+                    <TextView
+                        android:id="@+id/address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="广州市天河区"
+                        android:textColor="@color/red"
+                        android:textSize="15.7sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/loc_iv"
+                        android:layout_width="28.8dp"
+                        android:layout_height="28.8dp"
+                        android:background="@drawable/icon_detail_map"
+                        android:textColor="@color/white"
+                        android:textSize="14.4sp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/look_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="最近一周有200人浏览,有50人预约看了这个载体"
+                    android:drawableLeft="@drawable/icon_house"
+                    android:drawablePadding="9.5dp"
+                    android:textColor="@color/text_bg90"
+                    android:layout_marginTop="11.3dp"
+                    android:textSize="11.5sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="15.6dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_house"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="标签，此处为流布局"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/consultant_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="驻守物业顾问"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/text_bg90"
+                        android:textSize="13.4sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+</LinearLayout>

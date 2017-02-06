@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="14.4dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="珠江新城珠江北路81号"
+                android:textSize="15.4sp"
+                android:textColor="@color/text_bg20"/>
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打赏 "
+                android:textSize="13.4sp"
+                android:textColor="@color/text_bg90"/>
+            <TextView
+                android:id="@+id/tv_moneynumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥287"
+                android:textSize="13.4sp"
+                android:textColor="#FFF49A00"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_booknumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号：23415667899"
+            android:textSize="13.4sp"
+            android:layout_marginTop="8.1dp"
+            android:textColor="@color/text_bg60"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:id="@+id/tv_stage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="已签约"
+                android:textSize="13.4sp"
+                android:textColor="#FFE56032"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-11-20 9:00"
+                android:textSize="13.4sp"
+                android:textColor="@color/text_bg90"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

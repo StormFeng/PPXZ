@@ -1,0 +1,11 @@
+include ':app'
+include ':configlib'
+include ':midianAfinal'
+include ':bDIntegrationSDK_LibProject'
+include ':baseLib'
+include ':login'
+include ':baidu_Push_SDK_library_project'
+include ':mapLib'
+include ':social_sdk_library_project'
+include ':imagepicker'
+

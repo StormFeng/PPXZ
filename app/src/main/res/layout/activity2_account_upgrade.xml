@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/window_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 步骤 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/lime"
+                    android:textSize="46.1sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/2"
+                    android:textColor="@color/lime"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="身份证和名片上传"
+                android:textColor="@color/lime"
+                android:textSize="13sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="21.5dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/rl_pic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_pic1"
+
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/flow_layout_bg"/>
+                    <TextView
+                        android:id="@+id/tv_pic1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="12.5dp"
+                        android:drawableTop="@drawable/icon_upload"
+                        android:text="手持身份证"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_pic2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="14.4dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_pic2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/flow_layout_bg"/>
+                    <TextView
+                        android:id="@+id/tv_pic2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="12.5dp"
+                        android:drawableTop="@drawable/icon_upload"
+                        android:text="名片"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="21.5dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/rl_pic3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_pic3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/flow_layout_bg"/>
+                    <TextView
+                        android:id="@+id/tv_pic3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="12.5dp"
+                        android:drawableTop="@drawable/icon_upload"
+                        android:text="身份证正面"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_pic4"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="14.4dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_pic4"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/flow_layout_bg"/>
+                    <TextView
+                        android:id="@+id/tv_pic4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="12.5dp"
+                        android:drawableTop="@drawable/icon_upload"
+                        android:text="身份证反面"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 下一步 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selected_chekbox"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7.5dp"
+                    android:text="您已阅读并同意"
+                    android:textColor="@color/text_bg90"
+                    android:textSize="13.4sp"/>
+                <TextView
+                    android:id="@+id/notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="《客商推荐者合作协议》"
+                    android:textColor="#FF2ECC71"
+                    android:textSize="13.4sp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="259dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="29dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/reset_bg"
+                android:gravity="center"
+                android:text="提交申请"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

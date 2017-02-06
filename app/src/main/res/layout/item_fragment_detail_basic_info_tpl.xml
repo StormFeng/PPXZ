@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <midian.baselib.widget.PagerSlidingTabStrip
+        android:id="@+id/detal_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFCFCFC"
+        app:pstsIndicatorColor="@color/blue"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="1dip"
+        app:pstsUnderlineHeight="0dp"
+        />
+
+    <midian.baselib.widget.BaseLibViewPager
+        android:id="@+id/detal_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/belongs_rl"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/belongs_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_bg2"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="天河区5万平米科技园区"
+            android:textColor="@color/white"
+            android:textSize="19.2sp"/>
+
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="15.4dp"
+            android:layout_below="@+id/title_tv"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/belongs_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="14.3dp"
+                android:text="所属"
+                android:textColor="@color/white"
+                android:textSize="11.5sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14.3dp"
+                android:text="园区"
+                android:textColor="@color/white"
+                android:textSize="11.5sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

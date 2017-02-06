@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="3.8dp"
+          android:background="@drawable/search_checkbox_bg"
+          android:gravity="center"
+          android:minWidth="70dp"
+          android:paddingBottom="5dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:paddingTop="5dp"
+          android:text="选TA"
+          android:textColor="@drawable/tag_text_color"
+          android:textSize="13.4sp">
+</TextView>

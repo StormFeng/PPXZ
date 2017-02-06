@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_box_news"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18.2dp"
+            android:layout_marginRight="18.2dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/c_checkbox"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.4dp">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="57.6dp"
+                    android:layout_height="57.6dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14.4dp"
+                    android:layout_marginRight="15.4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_bg"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="科美设计 Comein"
+                        android:textSize="15.4sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24.4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="咨询次数"
+                            android:textColor="@color/text_bg90"
+                            android:textSize="12.5sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_serviceCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="2132"
+                            android:textColor="@color/orange_button"
+                            android:textSize="12.5sp"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="好评率"
+                            android:textSize="12.5sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_goodRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="90%"
+                            android:layout_marginRight="11.5dp"
+                            android:textColor="@color/orange_button"
+                            android:textSize="12.5sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <midian.baselib.widget.FlowLayout
+                android:id="@+id/lable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11.5dp"
+                android:layout_marginLeft="8.6dp"
+                android:layout_marginTop="14.2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

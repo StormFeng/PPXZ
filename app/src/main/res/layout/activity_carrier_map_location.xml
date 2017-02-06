@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topbar"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/topbar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/filter_airport"
+            android:layout_width="38.4dp"
+            android:layout_height="38.4dp"
+            android:layout_marginBottom="10.1dp"
+            android:background="@drawable/carrier_map_filter_airport" />
+
+        <ImageView
+            android:id="@+id/filter_port"
+            android:layout_width="38.4dp"
+            android:layout_height="38.4dp"
+            android:layout_marginBottom="10.1dp"
+            android:background="@drawable/carrier_map_filter_port" />
+
+        <ImageView
+            android:id="@+id/filter_railway_station"
+            android:layout_width="38.4dp"
+            android:layout_height="38.4dp"
+            android:layout_marginBottom="10.1dp"
+            android:background="@drawable/carrier_map_filter_railway_station" />
+
+        <ImageView
+            android:id="@+id/filter_highway"
+            android:layout_width="38.4dp"
+            android:layout_height="38.4dp"
+            android:layout_marginBottom="10.1dp"
+            android:background="@drawable/carrier_map_filter_highway" />
+
+        <ImageView
+            android:id="@+id/filter_metro"
+            android:layout_width="38.4dp"
+            android:layout_height="38.4dp"
+            android:layout_marginBottom="10.1dp"
+            android:background="@drawable/carrier_map_filter_metro" />
+
+        <ImageView
+            android:id="@+id/filter_bus_station"
+            android:layout_width="38.4dp"
+            android:layout_height="38.4dp"
+            android:layout_marginBottom="10.1dp"
+            android:background="@drawable/carrier_map_filter_bus_station" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/icon_location" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:paddingLeft="14.4dp"
+        android:paddingTop="13.4dp"
+        android:paddingBottom="11.9dp"
+        android:layout_height="wrap_content"
+        android:text="举报假客商"
+        android:textColor="@color/text_bg20"/>
+</LinearLayout>

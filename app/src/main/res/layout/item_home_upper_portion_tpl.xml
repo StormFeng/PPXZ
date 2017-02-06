@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <midian.baselib.widget.BannersView
+            android:id="@+id/bannerView"
+            android:layout_width="match_parent"
+            android:layout_height="172dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152.6dp"
+            android:orientation="vertical"
+            android:paddingLeft="12.5dp"
+            android:paddingRight="13.4dp">
+
+            <!--首页搜索条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42.2dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15.4dp"
+                android:paddingRight="12.5dp">
+
+                <TextView
+                    android:id="@+id/city_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="3.7dp"
+                    android:drawableRight="@drawable/icon_address_pull_down"
+                    android:gravity="center_vertical"
+                    android:text="广州"
+                    android:textColor="@color/text_bg20"
+                    android:textSize="13.4sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13.4dp"
+                    android:background="@color/divide_line" />
+
+                <TextView
+                    android:id="@+id/search_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:hint="大家都在搜:办公楼"
+                    android:paddingLeft="14.4dp"
+                    android:textSize="13.4sp" />
+
+                <ImageView
+                    android:layout_width="15.4dp"
+                    android:layout_height="15.4dp"
+                    android:background="@drawable/icon_all_search" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86.4dp"
+        android:layout_marginTop="5.8dp"
+        android:background="@color/window_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12.5dp"
+        android:paddingRight="13.4dp">
+
+        <TextView
+            android:id="@+id/synthes_park"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="5.8dp"
+            android:drawableTop="@drawable/icon_synthesis"
+            android:gravity="center_horizontal"
+            android:paddingTop="12.5dp"
+            android:tag="1"
+            android:text="综合体/园区"
+            android:textColor="@color/text_bg20"
+            android:textSize="11.5sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line"/>
+
+        <TextView
+            android:id="@+id/building"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="5.8dp"
+            android:drawableTop="@drawable/icon_building"
+            android:gravity="center_horizontal"
+            android:paddingTop="12.5dp"
+            android:tag="1"
+            android:text="写字楼"
+            android:textColor="@color/text_bg20"
+            android:textSize="11.5sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line"/>
+
+        <TextView
+            android:id="@+id/workshop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="5.8dp"
+            android:drawableTop="@drawable/icon_warehouse"
+            android:gravity="center_horizontal"
+            android:paddingTop="12.5dp"
+            android:tag="1"
+            android:text="厂房/仓库"
+            android:textColor="@color/text_bg20"
+            android:textSize="11.5sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line"/>
+
+        <TextView
+            android:id="@+id/land"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="5.8dp"
+            android:drawableTop="@drawable/icon_land"
+            android:gravity="center_horizontal"
+            android:paddingTop="12.5dp"
+            android:tag="1"
+            android:text="土地"
+            android:textColor="@color/text_bg20"
+            android:textSize="11.5sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:gravity="center">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/h_pager"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/window_bg"
+            android:clipChildren="false"
+            android:layout_marginLeft="11.4dp"
+            android:layout_marginRight="15.4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67.2dp"
+        android:layout_marginTop="6.7dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/map_choose_address_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="19dp"
+            android:tag="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地图选址"
+                    android:textColor="#FFEB6363"
+                    android:textSize="16.3sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.9dp"
+                    android:text="直观、便捷选址"
+                    android:textColor="#FF606060"
+                    android:textSize="11.5sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="44.2dp"
+                android:layout_height="44.2dp"
+                android:layout_marginLeft="21.1dp"
+                android:background="@drawable/icon_map"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1.9dp"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line"/>
+
+        <LinearLayout
+            android:id="@+id/investment_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="19dp"
+            android:tag="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资环境"
+                    android:textColor="#FF46A6E8"
+                    android:textSize="16.3sp"/>
+
+                <TextView
+                    android:id="@+id/city_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.9dp"
+                    android:text="广州投资环境"
+                    android:textColor="#FF606060"
+                    android:textSize="11.5sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="44.2dp"
+                android:layout_height="44.2dp"
+                android:layout_marginLeft="21.1dp"
+                android:background="@drawable/icon_environment"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44.2dp"
+        android:layout_marginTop="6.7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3.8dp"
+            android:layout_height="match_parent"
+            android:background="#FF51BBFA"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22.1dp"
+            android:gravity="center_vertical"
+            android:text="服务机构"
+            android:textColor="@color/text_bg20"
+            android:textSize="14.4sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@android:color/white"
+        android:clipChildren="false">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/comViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:id="@+id/page_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:clipChildren="false">
+            <com.midian.ppaddress.widget.ClipViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:clipChildren="false"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44.2dp"
+        android:layout_marginTop="6.7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3.8dp"
+            android:layout_height="match_parent"
+            android:background="#FF51BBFA"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22.1dp"
+            android:gravity="center_vertical"
+            android:text="投资顾问为您推荐"
+            android:textColor="@color/text_bg20"
+            android:textSize="14.4sp"/>
+    </LinearLayout>
+
+    <midian.baselib.widget.ListViewForScrollView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

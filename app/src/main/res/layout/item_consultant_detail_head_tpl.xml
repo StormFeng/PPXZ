@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_bg1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <midian.baselib.widget.CircleImageView
+                android:id="@+id/head_cv"
+                android:layout_width="57.6dp"
+                android:layout_height="57.6dp"
+                android:background="@drawable/head_person"/>
+
+            <ImageView
+                android:id="@+id/gender_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_zan_p"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.3dp"
+            android:text="姓名"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+
+        <TextView
+            android:id="@+id/type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.1dp"
+            android:text="物业顾问"
+            android:textColor="@color/white"
+            android:textSize="11.5sp"/>
+
+        <TextView
+            android:id="@+id/company_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.7dp"
+            android:text="广州找房有限公司"
+            android:textColor="@color/white"
+            android:textSize="11.5sp"/>
+
+        <TextView
+            android:id="@+id/comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="13.4dp"
+            android:background="@drawable/reset_bg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="好评率 90%"
+            android:textColor="@color/white"
+            android:textSize="11.5sp"/>
+
+        <TextView
+            android:id="@+id/sign_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="立志做一个尽职尽责的好顾问"
+            android:textColor="@color/white"
+            android:layout_marginBottom="11.7dp"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+</LinearLayout>

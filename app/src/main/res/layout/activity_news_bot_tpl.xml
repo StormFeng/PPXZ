@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/v_divider"
+            android:layout_width="match_parent"
+            android:layout_height="9.6dp"
+            android:background="@color/window_bg"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.9dp"
+            android:layout_marginRight="23.7dp"
+            android:layout_marginTop="15.4dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_ring"/>
+
+            <midian.baselib.widget.CircleImageView
+                android:id="@+id/iv_isread"
+                android:layout_width="4.8dp"
+                android:layout_height="4.8dp"
+                android:layout_marginLeft="6.9dp"
+                android:src="#FFFF6858"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.5dp"
+                android:text="系统消息"
+                android:textColor="@color/text_bg20"
+                android:textSize="13.4sp"/>
+
+            <TextView
+                android:id="@+id/tv_sendtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_bg60"
+                android:textSize="13.4sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="14.4dp"
+            android:layout_marginTop="14.6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF40B260"
+                android:textSize="13.4sp"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.5dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/text_bg20"
+                android:textSize="13.4sp"/>
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.5dp"
+                android:layout_marginRight="19.2dp"
+                android:src="@drawable/icon_home_bg"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

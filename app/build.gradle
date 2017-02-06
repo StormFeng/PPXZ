@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 21
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.midian.ppaddress"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 21
+        versionName "1.2.0"
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'PP'
+            keyPassword 'ppkey123'
+            storeFile file("$rootDir/ppkeystore.jks")
+            storePassword 'ppkey123'
+        }
+        release {
+            keyAlias 'PP'
+            keyPassword 'ppkey123'
+            storeFile file("$rootDir/ppkeystore.jks")
+            storePassword 'ppkey123'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':baseLib')
+    compile project(':login')
+    compile project(':mapLib')
+    compile project(':social_sdk_library_project')
+    compile project(':configlib')
+    compile project(':midianAfinal')
+    compile project(':baidu_Push_SDK_library_project')
+    compile project(':bDIntegrationSDK_LibProject')
+    compile project(':imagepicker')
+}

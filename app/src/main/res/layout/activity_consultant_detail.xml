@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <midian.baselib.widget.ScrollViewWidthListener
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/bg_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_bg1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp">
+
+                        <midian.baselib.widget.CircleImageView
+                            android:id="@+id/head_cv"
+                            android:layout_width="57.6dp"
+                            android:layout_height="57.6dp"
+                            android:background="@drawable/head_person"/>
+
+                        <ImageView
+                            android:id="@+id/gender_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_man"/>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/hide_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="16.3dp"/>
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"
+                        android:textColor="@color/white"
+                        android:textSize="15.4sp"/>
+
+                    <TextView
+                        android:id="@+id/type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9.1dp"
+                        android:text="物业顾问"
+                        android:textColor="@color/white"
+                        android:textSize="11.5sp"/>
+
+                    <TextView
+                        android:id="@+id/company_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.7dp"
+                        android:text="广州找房有限公司"
+                        android:textColor="@color/white"
+                        android:textSize="11.5sp"/>
+
+                    <TextView
+                        android:id="@+id/comment_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="13.4dp"
+                        android:background="@drawable/reset_bg"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="好评率 90%"
+                        android:textColor="@color/white"
+                        android:textSize="11.5sp"/>
+
+                    <TextView
+                        android:id="@+id/sign_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11.7dp"
+                        android:layout_marginTop="25dp"
+                        android:text="立志做一个尽职尽责的好顾问"
+                        android:textColor="@color/white"
+                        android:textSize="13.4sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="42.2dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/tab_bg_line"
+                    android:text="驻守的物业(10)"
+                    android:textColor="@color/text_bg90"
+                    android:textSize="14.4sp"/>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="15.4dp"
+                    android:background="#FFD7D7D7"/>
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/tab_bg_line"
+                    android:text="对TA的评价(100)"
+                    android:textColor="@color/text_bg90"
+                    android:textSize="14.4sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v4.view.ViewPager>
+
+                <Button
+                    android:id="@+id/btn_chooseAdr"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/blue"
+                    android:text="委托选址"
+                    android:textColor="@color/white"
+                    android:textSize="15.4sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </midian.baselib.widget.ScrollViewWidthListener>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <midian.baselib.widget.BaseLibTopbarView
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="42.2dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableBottom="@drawable/tab_bg_line"
+                android:text="驻守的物业(10)"
+                android:textColor="@color/text_bg90"
+                android:textSize="14.4sp"/>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="15.4dp"
+                android:background="#FFD7D7D7"/>
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableBottom="@drawable/tab_bg_line"
+                android:text="对TA的评价(100)"
+                android:textColor="@color/text_bg90"
+                android:textSize="14.4sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

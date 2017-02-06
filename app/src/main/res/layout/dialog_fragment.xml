@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="306.2dp"
+    android:layout_height="235.2dp"
+    android:background="@color/white"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="13.4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提出问题"
+            android:textSize="15.4sp"
+            android:gravity="center"
+            android:textColor="@color/text_bg20"/>
+        
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="15.5dp"
+            android:layout_height="15.5dp"
+            android:src="@drawable/icon_web_close"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20.9dp"/>
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/et_question"
+        android:layout_width="275.5dp"
+        android:layout_height="112.3dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="把您想要问的问题填写出来吧！"
+        android:gravity="start"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="11.5dp"
+        android:paddingTop="7.7dp"
+        android:textSize="13.4dp"
+        android:layout_marginTop="12.9dp"
+        android:background="@drawable/radius_bg_dialog"
+        android:textColor="@color/text_bgb0"/>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="240dp"
+        android:layout_height="34.6dp"
+        android:text="进入咨询"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19.2dp"
+        android:textSize="15.4sp"
+        android:background="@drawable/radius_bg_bluesolid"/>
+
+</LinearLayout>

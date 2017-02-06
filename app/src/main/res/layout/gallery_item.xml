@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/service_bg_ll"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <midian.baselib.widget.CircleImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="86.5dp"
+            android:layout_height="86.5dp"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10.5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/head1"/>
+
+        <LinearLayout
+            android:id="@+id/name_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵天日"
+                android:textColor="@color/text_bg20"
+                android:textSize="15.4sp"/>
+
+            <TextView
+                android:id="@+id/position_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.5dp"
+                android:text="销售总监"
+                android:textColor="#FFE56032"
+                android:textSize="11.5sp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/recommend_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_ll"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9.1dp"
+                android:gravity="center"
+                android:text="推荐理由:收藏TA定能满足您想要的"
+                android:textColor="@color/text_bg60"
+                android:textSize="11.5sp"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/collect_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recommend_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radius_bg_services_item"
+            android:gravity="center"
+            android:minWidth="76dp"
+            android:text="收藏"
+            android:textColor="#FFE56032"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15.7dp">
+
+        <TextView
+            android:id="@+id/carrierName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="载体名称"
+            android:textColor="@color/text_bg20"
+            android:textSize="17.3sp"/>
+
+        <midian.baselib.widget.FlowLayout
+            android:id="@+id/lable_flow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/carrierArea_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="园区面积 5000m²"
+            android:textColor="#FFE56032"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_bgb0"/>
+
+        <TextView
+            android:id="@+id/choose_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可选物业"
+            android:textColor="@color/text_bg90"
+            android:textSize="15.4sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_bgb0"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

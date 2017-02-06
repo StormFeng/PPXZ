@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.midian.ppaddress"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="0"
+    android:versionName="1.0.0">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.autofocus"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <!-- 百度地图 -->
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 百度定位 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- ###################友盟 ################### -->
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 获取mac地址作为用户的备用唯一标识 -->    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name="com.midian.ppaddress.app.MAppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1"
+        tools:replace="@android:name,icon,label,theme">
+
+        <activity
+            android:name="com.midian.ppaddress.ui.WelActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <!--微信分享回调-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.GuideActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--首页-->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <!--首页-选址类型-->
+        <activity
+            android:name=".ui.homepage.IndexSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <!--获取发布城市列表-->
+        <activity
+            android:name=".ui.homepage.CitysReleaseListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.homepage.ChooseAddressTypeActivity1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.homepage.MapChooseAddressActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.midian.ppaddress.ui.homepage.MapActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.homepage.InvestmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--地图搜索条件页-->
+        <activity
+            android:theme="@style/Theme.Android123"
+            android:name="com.midian.ppaddress.ui.homepage.SearchConditionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--选址fragment搜索条件页-->
+        <activity
+            android:name="com.midian.ppaddress.ui.homepage.FragmentSearchConditionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.homepage.SearchLableActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!--载体详情-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.MultiDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.ParkDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--3D视图-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.ThirdViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!--载体详情交通区位图-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.CarrierMapLocationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--更多可选 单元 -->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.MoreOptionalUnitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--园区详情>>更多评论-->
+        <activity
+            android:name=".ui.chooseaddres.MoreCommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!--园区详情>进入选址-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.ChooseAddressActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--载体详情>进入选址>对比-->
+        <activity
+            android:name=".ui.chooseaddres.ContrastListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--载体详情>对比-->
+        <activity
+            android:name=".ui.chooseaddres.CarrierDetailContrastActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-->对比>>截体对比表>>列表添加对比-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.AddContrastActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-->对比>>截体对比详细页-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.TableContrastActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!--对比详细页添加跳转的对比列表页-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.CarrierContrastActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--驻守物业顾问列表-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.ConsultantActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--写字楼详情,,,申请入驻-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.ApplyEnterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!--一键预约-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.MakeAppointmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!--经纪人详情-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.ConsultantDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.ConsultantDetailActivity1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--委托选址需求-->
+        <activity
+            android:name="com.midian.ppaddress.ui.chooseaddres.ChooseDemandActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--个人中心-->
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ConsultantCommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.UpgradeProprietorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.AccountUpgradeActivity2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.AccountUpgradeActivity1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.AccountUpgradeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--个人中心》》我的评论-->
+
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.PersonalCommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyCommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.PersonInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChooseCitysActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChooseAreaActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.AboutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.midian.ppaddress.ui.company.ChooseWaiterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.midian.ppaddress.ui.company.CompanyListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.company.CompanyDetialActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.company.CompanyServicePage"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.company.CompanyApplyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.company.AnswerQuestionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.company.EvaluateActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.RegisterActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.RegisterActivity_2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.BookingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.BookedActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.RecentlyBookedActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.NewsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.SystemNewsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.BookNewsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.AskHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyCollectionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyContrastActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyContrastChooseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChangePasswordActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChangePasswordActivity_2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChangeNumberActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChangeNumberActivity_2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.HelpActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.FeedBackActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.FeedBackActivity_2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--上传合同1-->
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.UploadContractActivity1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen"/>
+        <!--上传合同-->
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.UploadContractActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyBuildingResourceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyRecommendActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyRewardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.MyPropertyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.LeaseStateActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.CommentToServiceTalentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.AllBookingActivityCounselor"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.EditPersonInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChooseSexActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChooseCityActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.FeedBackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.HelpActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.BookingActivity_Counselor"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.AllBookingActivityMember"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.company.OneKeyAppActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.LookRuleActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.LookContractActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChangeBankCardActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.midian.ppaddress.ui.personal.ChangeBankCardActivity_2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.ShareAppActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.ChooseCityActivity_2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

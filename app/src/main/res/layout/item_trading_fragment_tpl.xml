@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12.5dp"
+        android:paddingLeft="18.2dp"
+        android:paddingRight="15.3dp"
+        android:paddingTop="16.3dp">
+
+        <RelativeLayout
+            android:layout_width="48dp"
+            android:layout_height="60dp">
+
+            <midian.baselib.widget.CircleImageView
+                android:id="@+id/head_cv"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/head1"/>
+
+            <TextView
+                android:id="@+id/red_dot"
+                android:layout_width="7.7dp"
+                android:layout_height="7.7dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7.7dp"
+                android:background="#FFF16666"/>
+
+            <TextView
+                android:id="@+id/type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="#FFFFF4F4"
+                android:padding="2.5dp"
+                android:text="推荐客商"
+                android:textColor="#FFF16666"
+                android:textSize="9.6dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="@color/text_bg20"
+                    android:textSize="15.4sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="已考察"
+                    android:textColor="@color/text_bg90"
+                    android:textSize="11.5sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.4dp"
+                android:text="订单号：13199998888"
+                android:textColor="@color/text_bg60"
+                android:textSize="13.4sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看"
+            android:textColor="#FFB0B0B0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="22.5dp">
+            <ImageView
+                android:layout_width="11.5dp"
+                android:layout_height="11.5dp"
+                android:src="@drawable/icon_dot"/>
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="1.9dp"
+                android:src="@color/blue"/>
+            <ImageView
+                android:layout_width="11.5dp"
+                android:layout_height="11.5dp"
+                android:src="@drawable/icon_dot"/>
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="1.9dp"
+                android:src="@color/blue"/>
+            <ImageView
+                android:layout_width="11.5dp"
+                android:layout_height="11.5dp"
+                android:src="@drawable/icon_dot"/>
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="1.9dp"
+                android:src="@color/blue"/>
+            <ImageView
+                android:layout_width="11.5dp"
+                android:layout_height="11.5dp"
+                android:src="@drawable/icon_dot"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.6dp"
+            android:paddingLeft="15.4dp"
+            android:paddingRight="15.4dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="@color/blue"
+                android:text="已预约"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="@color/blue"
+                android:text="已预约"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="@color/blue"
+                android:text="已预约"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="@color/blue"
+                android:text="已预约"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

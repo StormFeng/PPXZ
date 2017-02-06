@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <midian.baselib.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/pullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/radius_bg_whitesolid"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7.7dp">
+
+        <EditText
+            android:id="@+id/content_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFEEEEEE"
+            android:hint="说点什么吧"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_bg90"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:id="@+id/comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="11.5dp"
+            android:background="@drawable/detail_comment_radius_bg"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="点评"
+            android:textColor="@color/white"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="240dp"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/picker_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/picker_title"
+        android:textColor="#222222"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DADADA" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="#F5F5F5"
+        android:orientation="horizontal">
+
+
+        <midian.baselib.widget.wheelview.WheelView
+            android:id="@+id/year"
+            style="@style/wheelViewStyle" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADADA" />
+
+        <midian.baselib.widget.wheelview.WheelView
+            android:id="@+id/month"
+            style="@style/wheelViewStyle" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADADA" />
+
+        <midian.baselib.widget.wheelview.WheelView
+            android:id="@+id/day"
+            style="@style/wheelViewStyle" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADADA" />
+
+        <midian.baselib.widget.wheelview.WheelView
+            android:id="@+id/hour"
+            style="@style/wheelViewStyle" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADADA" />
+
+        <midian.baselib.widget.wheelview.WheelView
+            android:id="@+id/minute"
+            style="@style/wheelViewStyle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DADADA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_12"
+        android:paddingTop="@dimen/dimen_12">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_weight="1"
+            android:background="@drawable/login_out_radius_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="15.4sp" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/radius_bg_bluesolid"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="15.4sp" />
+    </LinearLayout>
+</LinearLayout>

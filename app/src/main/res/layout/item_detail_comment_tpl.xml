@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <midian.baselib.widget.PagerSlidingTabStrip
+        android:id="@+id/comment_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        app:pstsIndicatorColor="@color/blue"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="1dip"
+        app:pstsUnderlineHeight="0dp"
+        />
+
+    <midian.baselib.widget.BaseLibViewPager
+        android:id="@+id/comment_pager"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"/>
+
+    <LinearLayout
+        android:id="@+id/more_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="11.5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_bg"
+            android:gravity="center"
+            android:text="点击看更多点评"
+            android:textColor="#FF51BBFA"
+            android:textSize="14.4sp"/>
+    </LinearLayout>
+</LinearLayout>

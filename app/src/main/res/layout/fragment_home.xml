@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/window_bg"
+                android:orientation="vertical">
+    <midian.baselib.widget.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/refreshScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <!-- <midian.baselib.widget.ScrollViewWidthListener
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        &lt;!&ndash;<include layout="@layout/item_home_upper_portion_tpl"/>&ndash;&gt;
+
+    </midian.baselib.widget.ScrollViewWidthListener>-->
+    </midian.baselib.widget.pulltorefresh.PullToRefreshScrollView>
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

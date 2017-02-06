@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="25dp"
+        android:paddingLeft="14.4dp"
+        android:paddingRight="14.4dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17.3sp"
+            android:textColor="#FF40B260"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="14.1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11.5sp"
+                android:textColor="@color/text_bg90"
+                android:text="PP投服"/>
+            <View
+                android:layout_width="1.9dp"
+                android:layout_height="8.6dp"
+                android:background="@drawable/divider_line"
+                android:layout_marginLeft="6.5dp"/>
+            <TextView
+                android:id="@+id/tv_sendtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11.5sp"
+                android:textColor="@color/text_bg90"
+                android:layout_marginLeft="6.5dp"/>
+        </LinearLayout>
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="15dp"></WebView>
+    </LinearLayout>
+
+</LinearLayout>

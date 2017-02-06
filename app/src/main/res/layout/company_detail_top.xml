@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/re_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_adver"
+                    android:layout_width="match_parent"
+                    android:layout_height="227.5dp"
+                    android:background="@drawable/icon_home_bg"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="227.5dp"
+                    android:background="#60000000" />
+
+                <midian.baselib.widget.CircleImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="57.6dp"
+                    android:layout_height="57.6dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="69.1dp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43.3dp"
+                    android:layout_below="@+id/iv_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginTop="23dp"
+                    android:gravity="center"
+                    android:minWidth="130dp"
+                    android:text="Commercial Real Estate Services"
+                    android:textColor="@color/white"
+                    android:textSize="15.4sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/li_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="13.9dp"
+            android:paddingTop="10.6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.4dp"
+                android:text="咨询次数"
+                android:textColor="@color/text_bg90"
+                android:textSize="12.5sp" />
+
+            <TextView
+                android:id="@+id/tv_serviceCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="2132"
+                android:textColor="@color/orange_button"
+                android:textSize="12.5sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.6dp"
+                android:text="好评率"
+                android:textColor="@color/text_bg90"
+                android:textSize="12.5sp" />
+
+            <TextView
+                android:id="@+id/tv_goodRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="90%"
+                android:textColor="@color/orange_button"
+                android:textSize="12.5sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFEEEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:paddingBottom="8.6dp"
+            android:paddingLeft="14.4dp"
+            android:paddingTop="7.7dp">
+
+            <TextView
+                android:id="@+id/tv_label1"
+                android:layout_width="63.4dp"
+                android:layout_height="21.1dp"
+                android:background="#22338ABD"
+                android:gravity="center"
+                android:text="创业设计"
+                android:textColor="#FF338ABD"
+                android:textSize="11.5sp" />
+
+            <TextView
+                android:id="@+id/tv_label2"
+                android:layout_width="63.4dp"
+                android:layout_height="21.1dp"
+                android:layout_marginLeft="14.4dp"
+                android:background="#22338ABD"
+                android:gravity="center"
+                android:text="建筑造价"
+                android:textColor="#FF338ABD"
+                android:textSize="11.5sp" />
+
+            <TextView
+                android:id="@+id/tv_label3"
+                android:layout_width="63.4dp"
+                android:layout_height="21.1dp"
+                android:layout_marginLeft="14.4dp"
+                android:background="#22338ABD"
+                android:gravity="center"
+                android:text="法律法务"
+                android:textColor="#FF338ABD"
+                android:textSize="11.5sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.7dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="14.4dp"
+            android:paddingRight="14.4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.9dp"
+                android:text="公司介绍"
+                android:textColor="@color/text_bg20"
+                android:textSize="19.2sp" />
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22.9dp"
+                android:lineSpacingExtra="5dp"
+                android:text="\u3000\u3000我们不是装修公司，我们只帮你和装修公司打交道；\n\u3000\u3000我们不是监理公司，除了质量安全外，我们更关心你的装修效果；\n\u3000\u3000我们是业主的装修助手，用专业角度帮助业主处理装修事务（如业主需求分析、服务人员评定、科学统筹安排等），我们希望能够通过项目管理经验和行业资源，让业主享受一个轻松放心的装修体验。红帆的目标不但是要做好装修，让业主的装修物有所值，更希望能够通过科学专业的统筹，让业主的装修物超所值。"
+                android:textColor="@color/text_bg33"
+                android:textSize="15.4sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/service_ll"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="7.7dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="7.7dp"
+            android:paddingLeft="14.4dp"
+            android:paddingTop="14.4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="服务达人"
+                android:textColor="@color/text_bg90"
+                android:textSize="13.4sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="13.6dp"
+                android:background="#FFEEEEEE" />
+
+            <LinearLayout
+                android:id="@+id/ll_Agency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="6.7dp"
+                android:orientation="horizontal">
+
+                <midian.baselib.widget.CircleImageView
+                    android:id="@+id/iv_portrait1"
+                    android:layout_width="32.6dp"
+                    android:layout_height="32.6dp"
+                    android:layout_marginLeft="15.4dp" />
+
+                <midian.baselib.widget.CircleImageView
+                    android:id="@+id/iv_portrait2"
+                    android:layout_width="32.6dp"
+                    android:layout_height="32.6dp"
+                    android:layout_marginLeft="15.4dp" />
+
+                <midian.baselib.widget.CircleImageView
+                    android:id="@+id/iv_portrait3"
+                    android:layout_width="32.6dp"
+                    android:layout_height="32.6dp"
+                    android:layout_marginLeft="15.4dp" />
+
+                <midian.baselib.widget.CircleImageView
+                    android:id="@+id/iv_portrait4"
+                    android:layout_width="32.6dp"
+                    android:layout_height="32.6dp"
+                    android:layout_marginLeft="15.4dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawablePadding="10.8dp"
+                    android:drawableRight="@drawable/icon_right_arrow"
+                    android:gravity="end"
+                    android:text="咨询TA吧"
+                    android:textColor="@color/text_bg90"
+                    android:textSize="13.4sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rateCount"
+            android:layout_width="match_parent"
+            android:layout_height="42.4dp"
+            android:layout_marginTop="7.7dp"
+            android:background="#FFFAFAFA"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:text="用户评价(13004)"
+            android:textColor="@color/text_bg90"
+            android:textSize="15.4sp" />
+        <midian.baselib.widget.ListViewForScrollView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

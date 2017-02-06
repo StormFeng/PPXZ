@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15.4dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <LinearLayout
+                android:id="@+id/personal_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15.4dp">
+
+
+                <midian.baselib.widget.CircleImageView
+                    android:id="@+id/head"
+                    android:layout_width="61.4dp"
+                    android:layout_height="61.4dp"
+                    android:background="@drawable/ic_launcher"
+                    android:scaleType="centerCrop"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15.4dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="林若曦"
+                            android:textColor="@color/text_bg20"
+                            android:textSize="17.3sp"/>
+                        <TextView
+                            android:id="@+id/text_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.4dp"
+                            android:text="服务达人"
+                            android:background="@color/blue"
+                            android:textColor="@color/white"
+                            android:textSize="11.5sp"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13.7dp"
+                        android:text="手机号:138****8000"
+                        android:textColor="@color/text_bg60"
+                        android:textSize="13.4sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="7.7dp"
+                    android:layout_height="13.4dp"
+                    android:background="@drawable/icon_right_arrow"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15.4dp"
+                android:background="@drawable/c_divider_line"/>
+
+
+            <TextView
+                android:id="@+id/booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:drawableLeft="@drawable/icon_my_booking"
+                android:drawablePadding="16.3dp"
+                android:drawableRight="@drawable/icon_right_arrow"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:tag="1"
+                android:text="我的预约"
+                android:textColor="@color/text_bg20"
+                android:textSize="15.4sp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15.4dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:drawableLeft="@drawable/icon_sign"
+                android:drawablePadding="16.3dp"
+                android:drawableRight="@drawable/icon_right_arrow"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:tag="1"
+                android:text="消息"
+                android:textColor="@color/text_bg20"
+                android:textSize="15.4sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/c_divider_line"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/c_divider_line"/>
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:drawableLeft="@drawable/icon_my_comment"
+                android:drawablePadding="16.3dp"
+                android:drawableRight="@drawable/icon_right_arrow"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:tag="1"
+                android:text="我的评价"
+                android:textColor="@color/text_bg20"
+                android:textSize="15.4sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15.4dp"
+                android:background="@drawable/c_divider_line"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/c_divider_line"/>
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:drawableLeft="@drawable/icon_setting"
+                android:drawablePadding="16.3dp"
+                android:drawableRight="@drawable/icon_right_arrow"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:tag="1"
+                android:text="设置"
+                android:textColor="@color/text_bg20"
+                android:textSize="15.4sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="14.4dp"
+    android:paddingTop="18.2dp"
+    android:paddingBottom="17.3dp"
+    android:paddingRight="17.7dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="问题：先有鸡还是先有蛋？"
+        android:textSize="13.4sp"
+        android:textColor="@color/text_bg90"/>
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="问题：先有鸡还是先有蛋？"
+        android:layout_marginTop="14.5dp"
+        android:textSize="15.4sp"
+        android:textColor="@color/text_bg20"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19.3dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="159****2144"
+            android:textSize="15.4sp"
+            android:textColor="@color/text_bg90"/>
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="34.6dp"
+            android:layout_height="19.2dp"
+            android:background="#FFF77F7F"
+            android:layout_marginLeft="15.7dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="好评"
+            android:textSize="11.5sp"/>
+
+        <TextView
+            android:id="@+id/tv_createtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="2015-15-12 14:00"
+            android:textSize="11.5sp"
+            android:textColor="@color/text_bgb0"/>
+    </LinearLayout>
+
+
+</LinearLayout>

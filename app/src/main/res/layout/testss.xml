@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/show_city_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical"
+            android:paddingBottom="19dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="区域"
+                android:textColor="@color/text_bg20"
+                android:textSize="15.4sp"/>
+
+            <midian.baselib.widget.FlowLayout
+                android:id="@+id/area_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+            </midian.baselib.widget.FlowLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical"
+            android:paddingBottom="19dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="城市"
+                android:textColor="@color/text_bg20"
+                android:textSize="15.4sp"/>
+
+            <midian.baselib.widget.FlowLayout
+                android:id="@+id/city_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </midian.baselib.widget.FlowLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/reset_tv"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/reset_frame_bg"
+        android:gravity="center"
+        android:minWidth="40dp"
+        android:text="重置"
+        android:textColor="@color/text_bg60"
+        android:textSize="15.4sp"/>
+    <TextView
+        android:id="@+id/config_tv"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/reset_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="15.4sp"/>
+</LinearLayout>

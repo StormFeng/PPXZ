@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <!--地图模式页-搜索条件页原UI下半部分布局（暂时不用）-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginTop="19.6dp"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19.6dp"
+        android:text="面积区间（m²）"
+        android:textColor="@color/text_bg20"
+        android:textSize="15.4sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="96dp"
+            android:layout_height="28.8dp"
+            android:background="#FFEEEEEE"
+            android:gravity="center_vertical"
+            android:hint="100"
+            android:paddingLeft="7.7dp"
+            android:textColor="#FFB0B0B0"
+            android:textSize="13.4sp"/>
+
+        <View
+            android:layout_width="17.3dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="9.6dp"
+            android:background="@color/text_bg90"/>
+
+        <EditText
+            android:layout_width="96dp"
+            android:layout_height="28.8dp"
+            android:layout_marginLeft="9.6dp"
+            android:background="#FFEEEEEE"
+            android:gravity="center_vertical"
+            android:hint="500"
+            android:paddingLeft="7.7dp"
+            android:textColor="#FFB0B0B0"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginTop="19.6dp"
+        android:background="@color/divide_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="地点"
+            android:textColor="@color/text_bg20"
+            android:textSize="15.4sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_address_pull_down"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26.9dp"
+            android:background="@drawable/radius_bg"
+            android:drawableLeft="@drawable/icon_loc_bg"
+            android:drawablePadding="5.8dp"
+            android:gravity="center"
+            android:paddingLeft="18.2dp"
+            android:paddingRight="20dp"
+            android:text="广州"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26.9dp"
+            android:drawableLeft="@drawable/icon_reset_loc"
+            android:drawablePadding="7.7dp"
+            android:gravity="center"
+            android:text="重新定位"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginTop="19.6dp"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19.2dp"
+        android:text="区域"
+        android:textColor="@color/text_bg20"
+        android:textSize="15.4sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="全国"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="珠三角"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="港澳台"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="海外"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="江浙沪"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginTop="19.6dp"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19.2dp"
+        android:text="城市"
+        android:textColor="@color/text_bg20"
+        android:textSize="15.4sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="北京"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="上海"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="广州"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="深圳"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="杭州"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="福建"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="温州"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="26.9dp"
+            android:layout_marginLeft="3.8dp"
+            android:background="@drawable/radius_bg"
+            android:gravity="center"
+            android:text="宁波"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginTop="19.6dp"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:layout_width="78dp"
+        android:layout_height="36.5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/reset_frame_bg"
+        android:gravity="center"
+        android:text="重置"
+        android:textColor="@color/text_bg60"
+        android:textSize="15.4sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/reset_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="15.4sp"/>
+</LinearLayout>

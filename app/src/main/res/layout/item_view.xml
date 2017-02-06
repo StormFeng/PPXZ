@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="328dp"
+                android:layout_height="213dp"
+    android:layout_gravity="center"
+                android:background="@color/window_bg"
+                android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/h_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingRight="7.7dp"
+        android:paddingTop="14.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF51BBFA"
+                android:gravity="center"
+                android:minWidth="39dp"
+                android:padding="3dp"
+                android:text="推荐"
+                android:textColor="@color/white"
+                android:textSize="11.5sp"/>
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.7dp"
+                android:text="标题"
+                android:textColor="#FF606060"
+                android:textSize="14.4sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13.4dp">
+
+            <TextView
+                android:id="@+id/sale_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/recomment_index_bg"
+                android:gravity="center"
+                android:minWidth="39dp"
+                android:padding="3dp"
+                android:text="方式"
+                android:textColor="#FFE56032"
+                android:textSize="11.5sp"/>
+
+            <TextView
+                android:id="@+id/type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.7dp"
+                android:background="@drawable/recomment_index_bg"
+                android:gravity="center"
+                android:minWidth="39dp"
+                android:padding="3dp"
+                android:text="园区"
+                android:textColor="#FFE56032"
+                android:textSize="11.5sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textColor="#FFE56032"
+                android:textSize="19.2dp"/>
+
+            <TextView
+                android:id="@+id/unit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元/m²·月 起"
+                android:textColor="#FF606060"
+                android:textSize="11.5sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/main_recom_land_pic"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/loc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:drawableLeft="@drawable/icon_recommended"
+                android:drawablePadding="12.5dp"
+                android:gravity="center"
+                android:text="地图  地址  信息"
+                android:textColor="#FF606060"
+                android:textSize="12.5sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

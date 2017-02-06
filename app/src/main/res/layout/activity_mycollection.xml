@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编辑"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textSize="15.4sp"/>
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42.2dp"
+        android:background="@color/white"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="169dp"
+            android:layout_height="28.8dp"
+            android:text="载体"
+            android:textSize="13.4sp"
+            android:background="@drawable/btn_selector_left"/>
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="169dp"
+            android:layout_height="28.8dp"
+            android:text="服务机构"
+            android:textSize="13.4sp"
+            android:background="@drawable/btn_selector_right"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabs"
+            android:background="@color/window_bg" />
+
+        <LinearLayout
+            android:id="@+id/cancelArea"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:visibility="gone" >
+
+
+            <CheckBox
+                android:id="@+id/allCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableLeft="@drawable/c_checkbox"
+                android:drawablePadding="13dp"
+                android:text="全部选择"
+                android:textColor="@color/text_bg90"
+                android:textSize="15.4sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/delete_favor"
+                android:layout_width="76dp"
+                android:layout_height="33dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14.4sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

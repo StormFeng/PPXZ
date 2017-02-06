@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minHeight="200dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/wait_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="加载中..."
+        android:textColor="@color/text_bg60"
+        android:textSize="11.5sp" />
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="还没有数据哟"
+        android:textColor="@color/text_bg60"
+        android:textSize="11.5sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="11.5dp"
+            android:paddingRight="11.5dp"
+            android:paddingTop="11.5dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/divide_line" />
+
+            <TextView
+                android:id="@+id/count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有  种单元供您选择"
+                android:textColor="#FFD7D7D7"
+                android:textSize="13.4sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/divide_line" />
+        </LinearLayout>
+
+        <midian.baselib.widget.ListViewForScrollView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/more_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="点击查看更多"
+            android:textColor="#FF0076FF"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+</RelativeLayout>
